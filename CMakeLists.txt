@@ -22,8 +22,8 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
             #  ${PROJECT_SOURCE_DIR}/src/student.cpp
          #     ${PROJECT_SOURCE_DIR}/src/group.cpp)
 
-set(CMAKE_CXX_STANDARD 11)
-=======
+#set(CMAKE_CXX_STANDARD 11)
+#=======
 #set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Student.cpp
        #        ${PROJECT_SOURCE_DIR}/src/Group.cpp
         #       ${PROJECT_SOURCE_DIR}/src/Deanery.cpp)
