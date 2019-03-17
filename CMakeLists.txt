@@ -18,11 +18,23 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
-              ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+<<<<<<< HEAD
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/dean.cpp
+              ${PROJECT_SOURCE_DIR}/src/student.cpp
+              ${PROJECT_SOURCE_DIR}/src/group.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
+=======
+set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Student.cpp
+               ${PROJECT_SOURCE_DIR}/src/Group.cpp
+               ${PROJECT_SOURCE_DIR}/src/Deanery.cpp)
+set(CMAKE_CXX_STANDARD 11)
+add_library(task1_lib ${SRC_FILES1})
+#add_library(task1_lib ${SRC_FILES1} include/Student.h)
+#add_library(task1_lib ${SRC_FILES1} include/Group.h)
+#add_library(task1_lib ${SRC_FILES1} include/Deanery.h)
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp )
+>>>>>>> 7f782072dd8eab8802d7102fb6ae2d0ecc7aeeda
 
 add_library(task1_lib ${SRC_FILES})
 add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)

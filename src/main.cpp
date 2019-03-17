@@ -1,4 +1,8 @@
-#include "gtest/gtest.h"
+#include "Employee.h"
+#include "Cleaner.h"
+#include "Driver.h"
+#include "Tester.h"
+#include "Programmer.h"
 #include "TeamLeader.h"
 #include "Manager.h"
 #include "ProjectManager.h"
@@ -11,8 +15,7 @@
 using namespace std;
 ifstream FileEmployeers("employeers.txt");
 
-
-TEST(lab6,task1_1)
+int main()
 {
 	vector<Employee*> employee;
 	if (!FileEmployeers.is_open())
@@ -122,7 +125,6 @@ TEST(lab6,task1_1)
 			cout << employee[i]->GetId() << "\t" << employee[i]->GetFio() << "\t" << employee[i]->GetPayment() << "\t" << employee[i]->GetWorkTime() << "\n";
 		}
 	}
-	
+	system("pause");
+return 0;
 }
-
-
