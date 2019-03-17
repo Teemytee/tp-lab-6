@@ -1,4 +1,9 @@
 #include "gtest/gtest.h"
+#include "Employee.h"
+#include "Cleaner.h"
+#include "Driver.h"
+#include "Tester.h"
+#include "Programmer.h"
 #include "TeamLeader.h"
 #include "Manager.h"
 #include "ProjectManager.h"
@@ -15,16 +20,10 @@ ifstream FileEmployeers("employeers.txt");
 TEST(lab6,task1_1)
 {
 	vector<Employee*> employee;
-	if (!FileEmployeers.is_open())
+	
+	int id;
+	while (FileEmployeers >> id) 
 	{
-		FileEmployeers.open("employeers.txt");
-		return 0;
-	}
-	else
-	{
-		int id;
-		while (FileEmployeers >> id) 
-		{
 			string name, surname;
 			FileEmployeers >> name >> surname;
 			string position;
@@ -115,14 +114,12 @@ TEST(lab6,task1_1)
 				FileEmployeers >> tributary;
 				employee.push_back(new SeniorManager(id, name + " " + surname, numprojects, contribution, tributary));
 			}
-		}
+	}
 		for (int i = 0; i < employee.size(); ++i) 
 		{
 			employee[i]->SetPayment();
 			cout << employee[i]->GetId() << "\t" << employee[i]->GetFio() << "\t" << employee[i]->GetPayment() << "\t" << employee[i]->GetWorkTime() << "\n";
 		}
-	}
-	
 }
 
 
