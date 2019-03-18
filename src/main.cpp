@@ -8,7 +8,7 @@
 
 int main()
 {
-
+/*
 	vector<Employee*> employee;
 	ifstream file("employ.txt");
 	if (!file)
@@ -106,6 +106,6 @@ int main()
 		}
 		system("pause");
 		return 0;
-
+*/
 }
 
