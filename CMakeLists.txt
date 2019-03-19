@@ -24,7 +24,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 #        ${PROJECT_SOURCE_DIR}/src/engineer.cpp
 #        ${PROJECT_SOURCE_DIR}/src/manager.cpp)
 
-add_library(task1_lib ${SRC_FILES})
+#add_library(${SRC_FILES})
 add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 target_link_libraries(task1 task1_lib)
@@ -55,7 +55,7 @@ if (BUILD_TESTS)
   target_link_libraries(runUnitTests gtest gtest_main)
 
   # Extra linking for the project.
-  target_link_libraries(runUnitTests task1_lib)
+  target_link_libraries(runUnitTests)
 
   # This is so you can do 'make test' to see all your tests run, instead of
   # manually running the executable runUnitTests to see those specific tests.
