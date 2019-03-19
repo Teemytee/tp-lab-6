@@ -27,7 +27,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 #add_library(${SRC_FILES})
 add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-target_link_libraries(task1 task1_lib)
+target_link_libraries(task1)
 
 ################################
 # Testing
