@@ -75,4 +75,11 @@
 	MacMini
 }
 
-
+{
+	532
+	Tester Adolf
+	T
+	180
+	MacBook
+	iMac
+}

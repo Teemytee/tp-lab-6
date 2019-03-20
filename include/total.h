@@ -86,7 +86,7 @@ POSITIONS get_class(Employee *&employee) {
 }
 
 void work_n_hours(int n, std::vector<Employee*> &vec) {
-	for (Employee *&employee : vec) {
+	for (Employee *employee : vec) {
 		switch (get_class(employee))
 		{
 		case CLEANER:
@@ -97,23 +97,23 @@ void work_n_hours(int n, std::vector<Employee*> &vec) {
 			break;
 		case PROGRAMMER:
 			((Engineer*)employee)->calculate_work_pay(n);
-			((Engineer*)employee)->calculate_share();
+			((Engineer*)employee)->calculate_share(n);
 			break;
 		case TESTER:
 			((Engineer*)employee)->calculate_work_pay(n);
-			((Engineer*)employee)->calculate_share();
+			((Engineer*)employee)->calculate_share(n);
 			break;
 		case TEAMLEADER:
 			((TeamLeader*)employee)->calculate_work_pay(n);
-			((TeamLeader*)employee)->calculate_share();
+			((TeamLeader*)employee)->calculate_share(n);
 			((TeamLeader*)employee)->calculate_head();
 			break;
 		case PROJECTMANAGER:
-			((ProjectManager*)employee)->calculate_share();
+			((ProjectManager*)employee)->calculate_share(n);
 			((ProjectManager*)employee)->calculate_head();
 			break;
 		case SENIORMANAGER:
-			((ProjectManager*)employee)->calculate_share();
+			((ProjectManager*)employee)->calculate_share(n);
 			((ProjectManager*)employee)->calculate_head();
 			break;
 		default:
@@ -123,7 +123,7 @@ void work_n_hours(int n, std::vector<Employee*> &vec) {
 }
 
 void console_output(std::vector<Employee*> &vec) {
-	for (Employee *&employee : vec) {
+	for (Employee *employee : vec) {
 		std::cout << "id: " << employee->get_id() << std::endl;
 		std::cout << "name: " << employee->get_name() << std::endl;
 		switch (get_class(employee))
@@ -155,4 +155,48 @@ void console_output(std::vector<Employee*> &vec) {
 		std::cout << "working hours: " << employee->get_worktime() << ", total payment: " << employee->get_payment() << std::endl;
 		std::cout << std::endl;
 	}
+}
+
+void file_output(std::string filename, std::vector<Employee*> &vec) {
+	std::ofstream fin;
+	fin.open(filename);
+	if (fin.is_open()) {
+		for (Employee *employee : vec) {
+			fin << "id: " << employee->get_id() << std::endl;
+			fin << "name: " << employee->get_name() << std::endl;
+			switch (get_class(employee))
+			{
+			case CLEANER:
+				fin << "position: cleaner, wage: " << ((Personnel*)employee)->get_wage() << std::endl;
+				break;
+			case DRIVER:
+				fin << "position: driver, wage: " << ((Personnel*)employee)->get_wage() << std::endl;
+				break;
+			case PROGRAMMER:
+				fin << "position: programmer, salary: " << ((Engineer*)employee)->get_salary() << ", projects involved: " << ((Engineer*)employee)->get_projects() << std::endl;
+				break;
+			case TESTER:
+				fin << "position: tester, salary: " << ((Engineer*)employee)->get_salary() << ", projects involved: " << ((Engineer*)employee)->get_projects() << std::endl;
+				break;
+			case TEAMLEADER:
+				fin << "position: team leader, salary: " << ((Engineer*)employee)->get_salary() << ", projects involved: " << ((Engineer*)employee)->get_projects() << std::endl;
+				break;
+			case PROJECTMANAGER:
+				fin << "position: project manager, share: " << ((Manager*)employee)->get_share() << ", projects involved: " << ((Manager*)employee)->get_projects() << std::endl;
+				break;
+			case SENIORMANAGER:
+				fin << "position: senior manager, share: " << ((Manager*)employee)->get_share() << ", projects involved: " << ((Manager*)employee)->get_projects() << std::endl;
+				break;
+			default:
+				break;
+			}
+			fin << "working hours: " << employee->get_worktime() << ", total payment: " << employee->get_payment() << std::endl;
+			fin << std::endl;
+		}
+	}
+	else
+	{
+		std::cout << "file not opened" << std::endl;
+	}
+	fin.close();
 }

@@ -10,37 +10,21 @@ public:
 		this->worktime += hours;
 		this->payment += this->wage * 1 * hours;
 	};
-	float get_wage() {
-		return this->wage;
-	}
+	float get_wage();
 protected:
 	float wage;
 };
 
-Personnel::~Personnel() = default;
-
 class Cleaner : public Personnel {
 public:
-	Cleaner(int id, std::string name, float wage) {
-		this->id = id;
-		this->name = std::move(name);
-		this->worktime = 0;
-		this->wage = wage;
-		this->payment = 0;
-	};
-	~Cleaner() = default;
+	Cleaner(int, std::string, float);
+	~Cleaner();
 };
 
 class Driver : public Personnel {
 public:
-	Driver(int id, std::string name, float wage) {
-		this->id = id;
-		this->name = std::move(name);
-		this->worktime = 0;
-		this->wage = wage;
-		this->payment = 0;
-	};
-	~Driver() = default;
+	Driver(int, std::string, float);
+	~Driver();
 };
 
 #endif // !PERSONNEL

@@ -10,23 +10,11 @@
 class Employee
 {
 public:
-	virtual ~Employee() = 0; // pure virtual saves from instantiating Employee
-
-	int get_id() {
-		return this->id;
-	}
-
-	const std::string &get_name() {
-		return this->name;
-	}
-
-	float get_worktime() {
-		return this->worktime;
-	}
-
-	float get_payment() {
-		return this->payment;
-	}
+	virtual ~Employee() = 0;
+	int get_id();
+	const std::string &get_name() const;
+	float get_worktime();
+	float get_payment();
 
 protected:
 	int id;
@@ -35,12 +23,12 @@ protected:
 	float payment;
 };
 
-Employee::~Employee() = default;
-
 class Project {
 	// Do I need destructors here?
 public:
-	virtual void calculate_share() = 0;
+	virtual void calculate_share(int) = 0;
+protected:
+	int projects;
 };
 
 class Heading {

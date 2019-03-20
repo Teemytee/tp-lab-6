@@ -1,0 +1,50 @@
+id: 1
+name: Steve Jobs
+position: senior manager, share: 1, projects involved: 0
+working hours: 0, total payment: 0.25
+
+id: 2
+name: Steve Wozniak
+position: team leader, salary: 700, projects involved: 2
+working hours: 5, total payment: 3955
+
+id: 3
+name: John Sculley
+position: senior manager, share: 900, projects involved: 1
+working hours: 0, total payment: 990
+
+id: 4
+name: Lol Kek
+position: cleaner, wage: 50
+working hours: 5, total payment: 250
+
+id: 11
+name: Driver Jason
+position: driver, wage: 55
+working hours: 5, total payment: 275
+
+id: 5
+name: Craig Federighi
+position: team leader, salary: 750, projects involved: 1
+working hours: 5, total payment: 4125
+
+id: 55
+name: Programmer William
+position: programmer, salary: 200, projects involved: 2
+working hours: 5, total payment: 1060
+
+id: 66
+name: Programmer Michael
+position: programmer, salary: 220, projects involved: 2
+working hours: 5, total payment: 1166
+
+id: 432
+name: Tester Albert
+position: tester, salary: 180, projects involved: 4
+working hours: 5, total payment: 1008
+
+id: 532
+name: Tester Adolf
+position: tester, salary: 180, projects involved: 2
+working hours: 5, total payment: 954
+
