@@ -1,0 +1,78 @@
+{
+	1
+	Steve Jobs
+	SM
+	1
+}
+
+{
+	2
+	Steve Wozniak
+	TL
+	700
+	Macintosh
+	MacOS
+}
+
+{
+	3
+	John Sculley
+	SM
+	900
+	Apple
+}
+
+{
+	4
+	Lol Kek
+	C
+	50
+}
+
+{
+	11
+	Driver Jason
+	D
+	55
+	nothing here matters
+	ahaha
+}
+
+{
+	5
+	Craig Federighi
+	TL
+	750
+	MacOS
+}
+
+{
+	55
+	Programmer William
+	P
+	200
+	iPod
+	iPad
+}
+
+{
+	66
+	Programmer Michael
+	P
+	220
+	iPod
+	iMac
+}
+
+{
+	432
+	Tester Albert
+	T
+	180
+	MacBook
+	iMac
+	MacOS
+	MacMini
+}
+
+
