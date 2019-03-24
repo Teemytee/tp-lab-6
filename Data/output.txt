@@ -1,0 +1,13 @@
+1 Julian Brian Murphy TeamLeader payment=143000
+2 Joseph Joseph Simmons SeniorManager payment=112000
+3 Diego Jesse Scott ProjectManager payment=111000
+4 Ryan Jason Collins Programmer payment=120000
+5 Alejandro Jackson Bryant Programmer payment=121000
+6 Joseph Alejandro Bailey Programmer payment=119000
+7 Luis Nathaniel Alexander Programmer payment=123000
+8 Patrick Robert Powell Tester payment=116000
+9 Isaiah Ian Evans Tester payment=116800
+10 Bryan Aaron Cooper Tester payment=118400
+11 Eric William Smith Driver payment=7500
+12 Jaden Tyler Price Driver payment=7000
+13 Andrew Kelly Crash Cleaner payment=6000
