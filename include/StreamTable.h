@@ -9,6 +9,7 @@
 #undef min
 
 #include <string>
+#include <cstring>
 #include <vector>
 #include <algorithm>
 #include <iostream>
