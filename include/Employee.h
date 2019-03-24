@@ -4,8 +4,10 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <vector>
 #include "Interfaces.h"
+
 
 using namespace std;
 
@@ -37,6 +39,8 @@ public:
     void get_info(){
         cout << id << ". " << name <<"." << " The work hours:"<< worktime << ". The payment for work: " << payment << "rubles" << endl;
     }
+
+
 
 
 

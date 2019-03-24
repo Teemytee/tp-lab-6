@@ -13,7 +13,36 @@
 #include "Manager.h"
 #include "ProjectManager.h"
 #include <vector>
+#include <sstream>
+#include "StreamTable.h"
 #include <fstream>
+
+void make_a_information_table(vector <Employee* > employee_list)
+{
+    ofstream file("/Users/AlexSlav/Shtanuk/tp-lab-6/src/output_data_employees.txt");
+    StreamTable st(file);
+    st.AddCol(5);
+    st.AddCol(15);
+    st.AddCol(5);
+    st.AddCol(5);
+
+    //разкомментировать, если столбцы имеют одинаковую толщину
+    //st.Clear();
+    //st.SetCols(4, 10);
+
+    //st.SetVisible(1, false);//столбцы можно скрывать
+
+    st.MakeBorderExt(true);
+    st.SetDelimRow(true, '-');//st.SetDelimRow(false);//без символов-разделителей строк
+    st.SetDelimCol(true, '|');//st.SetDelimCol(false);//без символов-разделителей строк
+
+    //заголовок и значения выводятся одинаково
+    st << "ID" << "Name and Surname" <<  "Work hours" << "Salary";
+    for (auto i(0); i < employee_list.size(); i++) {
+        employee_list[i]->Payment();
+        st << i + 1 << employee_list[i]->GetName()<< employee_list[i]->GetWorktime() <<employee_list[i]->GetPayment();
+    }
+}
 
 
 int main(){
@@ -105,20 +134,20 @@ int main(){
                 employee_list.push_back(new Driver(id,name + " " + surname,worktime,base));
 
             }
+
         }
+
 
         }
 
     else
         cout << "Not open!";
-    //employee.push_back(new Engineer(1,"Slavutin Alex",8,500,project_belong("OpenVino"),what_grade(3)));
-    //Engineer Sanya (1,"Salvutin Alex",8,500,project_belong("Internship"),what_grade(5));
-    //Sanya.Payment();
     //cout << Sanya.GetPayment();
-    for (auto i(0); i < employee_list.size() ; ++i) {
-        employee_list[i]->Payment();
-        employee_list[i]->get_info();
+    //for (auto i(0); i < employee_list.size() ; ++i) {
+        //employee_list[i]->Payment();
+        //employee_list[i]->get_info();
 
-    }
+    //}
+    make_a_information_table(employee_list);
     return 0;
 }
