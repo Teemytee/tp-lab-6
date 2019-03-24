@@ -18,15 +18,7 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-#set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/dean.cpp
-            #  ${PROJECT_SOURCE_DIR}/src/student.cpp
-         #     ${PROJECT_SOURCE_DIR}/src/group.cpp)
 
-#set(CMAKE_CXX_STANDARD 11)
-#=======
-#set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Student.cpp
-       #        ${PROJECT_SOURCE_DIR}/src/Group.cpp
-        #       ${PROJECT_SOURCE_DIR}/src/Deanery.cpp)
 set(CMAKE_CXX_STANDARD 11)
 #add_library(task1_lib ${SRC_FILES1})
 #add_library(task1_lib ${SRC_FILES1} include/Student.h)
