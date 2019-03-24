@@ -134,15 +134,11 @@ int main(){
                 employee_list.push_back(new Driver(id,name + " " + surname,worktime,base));
 
             }
-
-        }
-
-
-        }
+         }
+    }
 
     else
         cout << "Not open!";
-    //cout << Sanya.GetPayment();
     //for (auto i(0); i < employee_list.size() ; ++i) {
         //employee_list[i]->Payment();
         //employee_list[i]->get_info();
