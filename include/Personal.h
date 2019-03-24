@@ -5,7 +5,7 @@ class Personal : public Employee, public IWorkTime
 protected:
 	double base;//base per hour
 public:
-	Personal(int _id, string _name, positions _position, int _worktime,double _base):Employee(_id, _name,_position,_worktime)
+	Personal(int _id, string _name, int _worktime,double _base):Employee(_id, _name,_worktime)
 	{
 		base = _base;
 	}
@@ -23,11 +23,17 @@ public:
 class Cleaner :public Personal
 {
 public:
-	Cleaner(int _id, string _name, positions _position, int _worktime, double _base) :Personal(_id, _name, _position, _worktime, _base) {}
+	Cleaner(int _id, string _name, int _worktime, double _base) :Personal(_id, _name, _worktime, _base)
+	{
+		position=positions::cleaner;
+	}
 };
 //driver.
 class Driver :public Personal
 {
 public:
-	Driver(int _id, string _name, positions _position, int _worktime, double _base) :Personal(_id, _name, _position, _worktime, _base) {}
+	Driver(int _id, string _name,  int _worktime, double _base) :Personal(_id, _name, _worktime, _base)
+	{
+		position=positions::driver;
+	}
 };

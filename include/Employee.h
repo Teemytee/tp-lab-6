@@ -19,11 +19,10 @@ protected:
 	double payment=0;
 	positions position;//position in staff 
 public:
-	Employee(int _id, string _name, positions _position, double _worktime)
+	Employee(int _id, string _name, double _worktime)
 	{
 		id =_id;
 		name = _name;
-		position = _position;
 		worktime = _worktime;
 	}
 	void PrintBio()

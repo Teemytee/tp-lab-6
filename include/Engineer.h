@@ -6,7 +6,7 @@ protected:
 	MyProject* project;
 	double coefficient;//contribution to the project
 public:
-	Engineer(int _id, string _name, positions _position, int _worktime, double _base, MyProject* _project,double _coefficient):Employee(_id, _name,_position, _worktime)
+	Engineer(int _id, string _name, int _worktime, double _base, MyProject* _project,double _coefficient):Employee(_id, _name, _worktime)
 	{
 		base = _base;
 		project = _project;
@@ -34,13 +34,19 @@ public:
 class Programmer:public Engineer
 {
 public:
-	Programmer(int _id, string _name, positions _position, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _position, _worktime,_base, _project, _coefficient) {};
+	Programmer(int _id, string _name, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _worktime,_base, _project, _coefficient) 
+	{
+		position=positions::programmer;
+	};
 };
 //testing engineer
 class Tester :public Engineer
 {
 public:
-	Tester(int _id, string _name, positions _position, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _position, _worktime, _base, _project, _coefficient) {};
+	Tester(int _id, string _name, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _worktime, _base, _project, _coefficient) 
+	{
+		position=positions::tester;
+	};
 };
 
 class TeamLeader :public Programmer, public IHeading
@@ -49,8 +55,9 @@ protected:
 	int subordinate;
 	double moneyForPerson = 1000.0;
 public:
-	TeamLeader(int _id, string _name, positions _position, int _worktime,double _base, MyProject* _project,double _coefficient,int _subordinate) :Programmer(_id, _name, _position,_worktime,_base,_project,_coefficient)
+	TeamLeader(int _id, string _name,  int _worktime,double _base, MyProject* _project,double _coefficient,int _subordinate) :Programmer(_id, _name,_worktime,_base,_project,_coefficient)
 	{
+		position=positions::teamLeader;
 		subordinate = _subordinate;
 	}
 	virtual double HeadingPayment()
