@@ -4,3 +4,7 @@
 4 Bistrov Igor Programmer 8 1500 Internship 1
 4 Bistrov Ivan TeamLeader 8 1000 OpenVino 3 20
 5 Rystrov Egor Manager 8 HR 2
+6 Bistrov Tvan ProjectManager 8  OpenVino 4
+7 Bistrov Wevan SeniorManager 8  OpenVino 3
+8 Bistrov Kolya Tester 8 500 OpenVino 1
+9 Vasechkin Nikita Driver 8 300

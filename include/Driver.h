@@ -2,7 +2,14 @@
 // Created by Александр Славутин on 2019-03-22.
 //
 
-#ifndef TASK1_DRIVER_H
-#define TASK1_DRIVER_H
+#pragma once
 
-#endif //TASK1_DRIVER_H
+class Driver:public  Personal{
+public:
+    Driver(int id, string name, int worktime, int base): Personal(id,  name, worktime, base){};
+    ~Driver() = default;
+    void drive_someone_to_somewhere(){
+        cout<<"Poehali!";
+    }
+};
+

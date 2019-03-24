@@ -6,7 +6,9 @@
 #include "Engineer.h"
 #include "Programmer.h"
 #include "Personal.h"
+#include "Driver.h"
 #include "TeamLeader.h"
+#include "Tester.h"
 #include "Cleaner.h"
 #include "Manager.h"
 #include "ProjectManager.h"
@@ -86,6 +88,21 @@ int main(){
                 int grade;
                 file >> grade;
                 employee_list.push_back(new SeniorManager(id,name + " " + surname,worktime,project_belong(project),what_grade(grade)));
+
+            }
+            else if (position == "Tester") {
+                int base, worktime;
+                file >> worktime >>base;
+                string project;
+                file >>project;
+                int grade;
+                file >> grade;
+                employee_list.push_back(new Tester(id,name + " " + surname,worktime,base,project_belong(project),what_grade(grade)));
+            }
+            else if (position == "Driver") {
+                int base, worktime;
+                file >> worktime >>base;
+                employee_list.push_back(new Driver(id,name + " " + surname,worktime,base));
 
             }
         }

@@ -2,7 +2,11 @@
 // Created by Александр Славутин on 2019-03-22.
 //
 
-#ifndef TASK1_TESTER_H
-#define TASK1_TESTER_H
+#pragma once
 
-#endif //TASK1_TESTER_H
+#include "Engineer.h"
+class Tester: public Engineer{
+public:
+    Tester(int id, string name, int worktime, int base, PROJECT *project, GRADE* grade):Engineer( id, name,worktime,base, project, grade){};
+    ~Tester() = default;
+};
