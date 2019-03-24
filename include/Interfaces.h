@@ -3,10 +3,11 @@
 //
 
 #pragma once
+using namespace std;
 
 class IWorkTime{
 protected:
-    virtual float time_payment() = 0;
+    virtual int time_payment() = 0;
 };
 
 // grading system
@@ -15,7 +16,7 @@ struct GRADE {
     float contribution_level;
 };
 
-extern GRADE grade[5] = {{1,0.1},{2,0.15},{3,0.2},{4,0.25},{5,0.3}};
+extern GRADE grade[5] = {{1,0.001},{2,0.005},{3,0.008},{4,0.01},{5,0.015}};
 
 GRADE* what_grade(int gr){
     for (int i = 0; i < 5 ; ++i) {
@@ -40,10 +41,10 @@ PROJECT* project_belong(string pr_name){
 
 class Project{
 protected:
-    virtual float project_payment() = 0;
+    virtual int project_payment() = 0;
 };
 
 class Heading{
 protected:
-    virtual float payment_for_people_count() = 0;
+    virtual int payment_for_people_count() = 0;
 };

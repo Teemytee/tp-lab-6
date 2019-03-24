@@ -5,19 +5,39 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Interfaces.h"
 
 using namespace std;
 
 
 class Employee{
 public:
-    Employee();
-    Employee(int id, string name, int worktime);
-    virtual float Payment() = 0;
-    int GetID () const;
-    int GetWorktime () const;
-    string GetName () const;
-    ~Employee();
+    Employee() = default;
+    Employee(int id, string name, int worktime):id(id),name(name),worktime(worktime){}
+    virtual void Payment() = 0;
+    string  GetName() const
+    {
+        return this->name;
+    }
+
+    int GetID() const
+    {
+        return this->id;
+    }
+
+    int GetWorktime() const {
+        return this->worktime;
+    }
+
+    int GetPayment(){
+        return this->payment;
+    }
+
+
+    void get_info(){
+        cout << id << ". " << name <<"." << " The work hours:"<< worktime << ". The payment for work: " << payment << "rubles" << endl;
+    }
+
 
 
 
@@ -25,7 +45,8 @@ protected:
     int id;
     string name;
     int worktime;
-    int payment;
+    int payment = 0;
+
 
 
 };

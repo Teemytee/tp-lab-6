@@ -4,19 +4,38 @@
 #pragma  once
 
 #include "Employee.h"
-#include "Interfaces.h"
 
 
 
-class Engineer : public Employee, public virtual Project, public virtual IWorkTime {
+class Engineer : public Employee, public  Project, public IWorkTime {
 public:
-   float Payment() override;
-   float time_payment() override;
-   float project_payment() override;
-   Engineer(int id, string name, int worktime, float base, PROJECT *project, GRADE * grade);
+    Engineer():Employee(){};
+    int time_payment() override
+    {
+        return this->base * this->worktime;
+
+    }
+
+    int project_payment() override
+    {
+        return this->project->budget * this->grade->contribution_level;
+    }
+
+
+    void Payment() override
+    {
+        this->payment = time_payment() + project_payment();
+
+    }
+    Engineer(int id, string name, int worktime, int base, PROJECT *project, GRADE* grade):Employee(id, name, worktime)
+    {
+        this->base = base;
+        this->project = project;
+        this->grade = grade;
+    }
 
 private:
-    float base;
+    int base;
     PROJECT *project;
     GRADE * grade; // grade - is the grading system,which allow to count contribution of employee
 };

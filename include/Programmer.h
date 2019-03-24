@@ -4,10 +4,9 @@
 
 #pragma once
 
-
-#include "Engineer.h"
-
-class Programmer: public Engineer {
-    Programmer(int id, string name, int worktime, float base, PROJECT *project, GRADE * grade);
-    ~Programmer();
+class Programmer : public Engineer{
+public:
+    Programmer():Engineer(){};
+    Programmer(int id, string name, int worktime, int base, PROJECT *project, GRADE* grade):Engineer( id, name,worktime,base, project, grade){};
+    ~Programmer() = default;
 };
