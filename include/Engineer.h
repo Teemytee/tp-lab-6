@@ -1,10 +1,10 @@
-//инженер. Имеет ставку и оплату за час + бонусы от выполняемого проекта.
+//Engineer. He has base and payment per hour + bonuses from the project.
 class Engineer :public Employee, public IWorkTime, public IProject
 {
 protected:
-	double base;// -базовая ставка руб. / час(если нужна). 
+	double base;//payment per hour
 	MyProject* project;
-	double coefficient;//вклад в проект 
+	double coefficient;//contribution to the project
 public:
 	Engineer(int _id, string _name, positions _position, int _worktime, double _base, MyProject* _project,double _coefficient):Employee(_id, _name,_position, _worktime)
 	{
@@ -12,17 +12,17 @@ public:
 		project = _project;
 		coefficient = _coefficient;
 	}
-	virtual unsigned int PaymentWorkTime()
+	virtual double PaymentWorkTime()
 	{
-		unsigned int payment = worktime * base;
+		double payment = worktime * base;
 		return payment;
 	}
-	virtual unsigned int PaymentProject()
+	virtual double PaymentProject()
 	{
 		unsigned int payment = coefficient * (project->budget);
 		return payment;
 	}
-	virtual unsigned int CalcPayment()
+	virtual double CalcPayment()
 	{
 		payment = PaymentWorkTime() + PaymentProject();
 
@@ -30,13 +30,13 @@ public:
 	}
 
 };
-//инженер - программист.
+//software engineer
 class Programmer:public Engineer
 {
 public:
 	Programmer(int _id, string _name, positions _position, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _position, _worktime,_base, _project, _coefficient) {};
 };
-//инженер по тестированию.
+//testing engineer
 class Tester :public Engineer
 {
 public:
@@ -47,18 +47,18 @@ class TeamLeader :public Programmer, public IHeading
 {
 protected:
 	int subordinate;
-	unsigned int moneyForPerson = 1000;
+	double moneyForPerson = 1000.0;
 public:
 	TeamLeader(int _id, string _name, positions _position, int _worktime,double _base, MyProject* _project,double _coefficient,int _subordinate) :Programmer(_id, _name, _position,_worktime,_base,_project,_coefficient)
 	{
 		subordinate = _subordinate;
 	}
-	virtual unsigned int HeadingPayment()
+	virtual double HeadingPayment()
 	{
-		unsigned int payment = moneyForPerson * subordinate;
+		double payment = moneyForPerson * subordinate;
 		return payment;
 	}
-	virtual unsigned int CalcPayment()
+	virtual double CalcPayment()
 	{
 		payment = PaymentWorkTime() + PaymentProject()+ HeadingPayment();
 		return payment;

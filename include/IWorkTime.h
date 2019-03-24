@@ -1,6 +1,6 @@
-// -расчет оплаты исходя из отработанного времени(часы умножаются на ставку).
+// calculation of payment based on the time worked (hours multiplied by the rate)
 class IWorkTime
 {
 public:
-	virtual unsigned int PaymentWorkTime()=0;
+	virtual double PaymentWorkTime()=0;
 };

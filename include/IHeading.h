@@ -1,5 +1,5 @@
-//Heading - расчет оплаты исходя из руководства (количество подчиненных)
+//Heading - calculation of payment based on management (number of subordinates)
 class IHeading
 {
-	virtual unsigned int HeadingPayment() = 0;
+	virtual double HeadingPayment() = 0;
 };

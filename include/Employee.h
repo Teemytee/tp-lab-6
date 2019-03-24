@@ -1,4 +1,3 @@
-enum positions { cleaner, driver, programmer, teamLeader, tester, projectManager, seniorManager };
 ostream& operator <<(ostream& out, const positions&t) {
 	switch (t) {
 	case cleaner:return(out << "Cleaner");
@@ -14,10 +13,10 @@ ostream& operator <<(ostream& out, const positions&t) {
 class Employee
 {
 protected:
-	int id;// -идентификационный номер. 
-	string name; // -ФИО. 
-	double worktime; // -отработанное время. 
-	unsigned int payment=0;// -заработная плата. 
+	int id; 
+	string name; 
+	double worktime; 
+	double payment=0;
 	positions position;//position in staff 
 public:
 	Employee(int _id, string _name, positions _position, double _worktime)
@@ -35,5 +34,5 @@ public:
 	{
 		out << id << ' ' << name << ' ' << position << " payment=" << payment << endl;
 	}
-	virtual unsigned int CalcPayment() = 0;
+	virtual double CalcPayment() = 0;
 };

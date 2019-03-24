@@ -1,31 +1,31 @@
 
-//работник по найму с оплатой за фактически отработанное время. Имеет ставку за час.
+//Employee for hire with payment for actually worked time. Has base per hour.
 class Personal : public Employee, public IWorkTime
 {
 protected:
-	double base;// -базовая ставка руб. / час(если нужна). 
+	double base;//base per hour
 public:
 	Personal(int _id, string _name, positions _position, int _worktime,double _base):Employee(_id, _name,_position,_worktime)
 	{
 		base = _base;
 	}
-	virtual unsigned int PaymentWorkTime()
+	virtual double PaymentWorkTime()
 	{
-		unsigned int payment = worktime * base;
+		double payment = worktime * base;
 		return payment;
 	}
-	virtual unsigned int CalcPayment() {
+	virtual double CalcPayment() {
 		payment = PaymentWorkTime();
 		return payment;
 	}
 };
- //- уборщица.
+ //cleaner.
 class Cleaner :public Personal
 {
 public:
 	Cleaner(int _id, string _name, positions _position, int _worktime, double _base) :Personal(_id, _name, _position, _worktime, _base) {}
 };
-//водитель.
+//driver.
 class Driver :public Personal
 {
 public:

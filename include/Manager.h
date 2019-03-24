@@ -1,20 +1,20 @@
-//менеджер. Оплату получает из денег проекта, которым руководит. 
+//Manager. Receives payment from the money of the project, which he manages.
 class Manager :public Employee, public IProject
 {
 protected:
 	MyProject* project;
-	double coefficient;//вклад в проект 
+	double coefficient;//contribution to the project
 public:
 	Manager(int _id, string _name, positions _position, int _worktime,MyProject* _project,double _coefficient):Employee(_id, _name, _position,_worktime) {
 		project = _project;
 		coefficient = _coefficient;
 	}
-	virtual unsigned int PaymentProject()
+	virtual double PaymentProject()
 	{
-		unsigned int payment = coefficient * (project->budget);
+		double payment = coefficient * (project->budget);
 		return payment;
 	}
-	virtual unsigned int CalcPayment()
+	virtual double CalcPayment()
 	{
 		payment = PaymentProject();
 		return payment;
@@ -30,12 +30,12 @@ public:
 	{
 		subordinate = _subordinate;
 	}
-	virtual unsigned int HeadingPayment()
+	virtual double HeadingPayment()
 	{
-		unsigned payment = moneyForPerson * subordinate;
+		double payment = moneyForPerson * subordinate;
 		return payment;
 	}
-	virtual unsigned int CalcPayment()
+	virtual double CalcPayment()
 	{
 		payment = PaymentProject()+ HeadingPayment();
 		return payment;

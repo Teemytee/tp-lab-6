@@ -1,6 +1,7 @@
-// -расчет оплаты исходя из участия в проекте(бюджет проекта делится пропорционально персональному вкладу).
+// -calculation of payment based on participation in the project
+// (the project budget is divided in proportion to the personal contribution).
 class IProject
 {
 public:
-	virtual unsigned int PaymentProject()=0;
+	virtual double PaymentProject()=0;
 };

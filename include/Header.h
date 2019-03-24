@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 using namespace std;
+enum positions { cleaner, driver, programmer, teamLeader, tester, projectManager, seniorManager };
 #include "MyProject.h"
 #include "IWorkTime.h"
 #include "IProject.h"
@@ -15,12 +16,14 @@ using namespace std;
 vector<Employee*>& ReadandPrint(ifstream& in, ofstream&out)
 {
 	vector<Employee*>*employees = new vector<Employee*>;
-	string project, _budjet, position, name, _worktime, _id;
-	int budjet, worktime, id;
+	string project, temp, _budjet, position, name, _worktime, _base, _id, _coefficient, _subordinate;
+	int budjet, worktime, id, subordinate;
+	double coefficient,base;
 	getline(in, project, ';');
 	getline(in, _budjet, ';');
 	budjet = atoi(_budjet.c_str());
 	MyProject myproject = { budjet,"project" };
+	getline(in, temp, ';');
 	while (!in.eof())
 	{
 		getline(in, _id, ';');
@@ -29,13 +32,60 @@ vector<Employee*>& ReadandPrint(ifstream& in, ofstream&out)
 		getline(in, _worktime, ';');
 		worktime = atoi(_worktime.c_str());
 		id = atoi(_id.c_str());
-		if (position == "programmer") employees->push_back(new Programmer(id, name, positions::programmer, worktime, 100, &myproject, 0.1));
-		if (position == "tester") employees->push_back(new Programmer(id, name, positions::tester, worktime, 80, &myproject, 0.1));
-		if (position == "projectManager") employees->push_back(new ProjectManager(id, name, positions::projectManager, worktime, &myproject, 0.1, 11));
-		if (position == "seniorManager") employees->push_back(new SeniorManager(id, name, positions::seniorManager, worktime, &myproject, 0.1, 12));
-		if (position == "teamLeader")employees->push_back(new TeamLeader(id, name, positions::teamLeader, worktime, 120, &myproject, 0.1, 7));
-		if (position == "driver")employees->push_back(new Driver(id, name, positions::driver, worktime, 50));
-		if (position == "cleaner")employees->push_back(new Cleaner(id, name, positions::cleaner, worktime, 60));
+		if (position == "programmer")
+		{
+			getline(in, _base, ';');
+			base = atof(_base.c_str());
+			getline(in, _coefficient, ';');
+			coefficient= atof(_coefficient.c_str());
+			employees->push_back(new Programmer(id, name, positions::programmer, worktime, base, &myproject, coefficient));
+		}
+		if (position == "tester")
+		{
+			getline(in, _base, ';');
+			base = atof(_base.c_str());
+			getline(in, _coefficient, ';');
+			coefficient = atof(_coefficient.c_str());
+			employees->push_back(new Programmer(id, name, positions::tester, worktime, base, &myproject, coefficient));
+		}
+		if (position == "projectManager") 
+		{
+			getline(in, _coefficient, ';');
+			coefficient = atof(_coefficient.c_str());
+			getline(in, _subordinate, ';');
+			subordinate = atoi(_subordinate.c_str());
+			employees->push_back(new ProjectManager(id, name, positions::projectManager, worktime, &myproject, coefficient, subordinate));
+		}
+		if (position == "seniorManager")
+		{ 
+			getline(in, _coefficient, ';');
+			coefficient = atof(_coefficient.c_str());
+			getline(in, _subordinate, ';');
+			subordinate = atoi(_subordinate.c_str());
+			employees->push_back(new SeniorManager(id, name, positions::seniorManager, worktime, &myproject, coefficient, subordinate));
+		}
+		if (position == "teamLeader")
+		{
+			getline(in, _base, ';');
+			base = atof(_base.c_str());
+			getline(in, _coefficient, ';');
+			coefficient = atof(_coefficient.c_str());
+			getline(in, _subordinate, ';');
+			subordinate = atoi(_subordinate.c_str());
+			employees->push_back(new TeamLeader(id, name, positions::teamLeader, worktime, base, &myproject, coefficient, subordinate));
+		}
+		if (position == "driver") 
+		{ 
+			getline(in, _base, ';');
+			base = atof(_base.c_str());
+			employees->push_back(new Driver(id, name, positions::driver, worktime, base));
+		}
+		if (position == "cleaner") 
+		{
+			getline(in, _base, ';');
+			base = atof(_base.c_str());
+			employees->push_back(new Cleaner(id, name, positions::cleaner, worktime, base)); 
+		}
 		position = "";
 
 	}
