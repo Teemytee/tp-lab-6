@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <cstdlib>
 using namespace std;
 #include "MyProject.h"
 #include "IWorkTime.h"
