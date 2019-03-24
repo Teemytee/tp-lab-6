@@ -4,7 +4,6 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-enum positions { cleaner, driver, programmer, teamLeader, tester, projectManager, seniorManager };
 #include "MyProject.h"
 #include "IWorkTime.h"
 #include "IProject.h"

@@ -36,7 +36,7 @@ class Programmer:public Engineer
 public:
 	Programmer(int _id, string _name, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _worktime,_base, _project, _coefficient) 
 	{
-		position=positions::programmer;
+		position="programmer";
 	};
 };
 //testing engineer
@@ -45,7 +45,7 @@ class Tester :public Engineer
 public:
 	Tester(int _id, string _name, int _worktime, double _base, MyProject* _project, double _coefficient) :Engineer(_id, _name, _worktime, _base, _project, _coefficient) 
 	{
-		position=positions::tester;
+		position="tester";
 	};
 };
 
@@ -57,7 +57,7 @@ protected:
 public:
 	TeamLeader(int _id, string _name,  int _worktime,double _base, MyProject* _project,double _coefficient,int _subordinate) :Programmer(_id, _name,_worktime,_base,_project,_coefficient)
 	{
-		position=positions::teamLeader;
+		position="teamLeader";
 		subordinate = _subordinate;
 	}
 	virtual double HeadingPayment()

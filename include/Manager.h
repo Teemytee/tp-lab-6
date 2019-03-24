@@ -29,7 +29,7 @@ public:
 	ProjectManager(int _id, string _name, int _worktime, MyProject* _project,double _coefficient,int _subordinate) :Manager(_id, _name,  _worktime,_project,_coefficient)
 	{
 		subordinate = _subordinate;
-		position=positions::projectManager;
+		position="projectManager";
 	}
 	virtual double HeadingPayment()
 	{
@@ -47,6 +47,6 @@ class SeniorManager :public ProjectManager
 public:
 	SeniorManager(int _id, string _name,  int _worktime, MyProject* _project,double _coefficient, int _subordinate) :ProjectManager(_id, _name,  _worktime, _project,_coefficient, _subordinate) 
 	{
-		position=positions::seniorManager;
+		position="seniorManager";
 	}
 };

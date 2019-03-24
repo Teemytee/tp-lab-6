@@ -25,7 +25,7 @@ class Cleaner :public Personal
 public:
 	Cleaner(int _id, string _name, int _worktime, double _base) :Personal(_id, _name, _worktime, _base)
 	{
-		position=positions::cleaner;
+		position="cleaner";
 	}
 };
 //driver.
@@ -34,6 +34,6 @@ class Driver :public Personal
 public:
 	Driver(int _id, string _name,  int _worktime, double _base) :Personal(_id, _name, _worktime, _base)
 	{
-		position=positions::driver;
+		position="driver";
 	}
 };
