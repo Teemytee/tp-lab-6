@@ -2,21 +2,40 @@
 
 unsigned int Employee::count = 0;
 
-Employee::Employee(std::string _fio){
-  fio = _fio;
+Employee::Employee(std::string _fio)
+{
   count += 1;
   id = count;
-  worktime = 0;
+  fio = _fio;
+  salary = 0;
 }
 
-std::string Employee::get_fio(){
-  return fio;
+Employee::~Employee()
+{
+  count -= 1;
 }
 
-unsigned int Employee::get_count(){
+unsigned int Employee::return_count()
+{
   return count;
 }
 
-unsigned int Employee::get_id(){
+unsigned int Employee::return_id()
+{
   return id;
+}
+
+unsigned int Employee::return_salary()
+{
+  return salary;
+}
+
+std::string Employee::return_fio()
+{
+  return fio;
+}
+
+std::string Employee::return_position()
+{
+  return position;
 }
