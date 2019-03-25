@@ -1,0 +1,20 @@
+1 Morris Roland Cleaner 100 10
+2 Huver Charlz Driver 100 10
+3 Simpson Donald Cleaner 100 12
+4 Parsons Dilan Driver 100 13
+6 Dennis Devid Programmer 100 20  frontend
+7 Horn Deniel Programmer 100 20 blockchain
+8 Uilson Osvald SeniorManager frontend 0.3 5
+9 Griffin Treysi Tester  100 20 backend
+10 Dzhef Oliver Tester 100 23 frontend
+11 Stouks Maykl ProjectManager backend 0.2 5
+12 Kuk Dzhoshua ProjectManager blockchain  0.3 4
+13 Rayt Klement Tester 100 25 frontend
+14 Bell Mark Programmer 100 25 blockchain
+15 Buker Kennet Programmer 100 22 backend
+16 Beyts Dzhordzh Tester 100 25 backend
+17 French Ronald Manager frontend 0.4
+18 Keysi Uolter TeamLeader 100 30 blockchain 3
+19 Nil Charlz TeamLeader 100 25 frontend 2
+20 Short Godvin SeniorManager backend 0.3 3
+21 Logan Dzhek Manager backend 0.3

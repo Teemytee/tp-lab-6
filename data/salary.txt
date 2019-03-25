@@ -1,0 +1,21 @@
+1: Morris Roland worked: 100 hours, salary: 1100.000000 $ 
+2: Huver Charlz worked: 100 hours, salary: 1300.000000 $ 
+3: Simpson Donald worked: 100 hours, salary: 1320.000000 $ 
+4: Parsons Dilan worked: 100 hours, salary: 1690.000000 $ 
+6: Dennis Devid worked: 100 hours, salary: 3750.000000 $ 
+7: Horn Deniel worked: 100 hours, salary: 3250.000000 $ 
+8: Uilson Osvald worked: 0 hours, salary: 3704.999973 $ 
+9: Griffin Treysi worked: 100 hours, salary: 3350.000054 $ 
+10: Dzhef Oliver worked: 100 hours, salary: 3350.000042 $ 
+11: Stouks Maykl worked: 0 hours, salary: 2550.000027 $ 
+12: Kuk Dzhoshua worked: 0 hours, salary: 2100.000060 $ 
+13: Rayt Klement worked: 100 hours, salary: 3550.000042 $ 
+14: Bell Mark worked: 100 hours, salary: 3750.000000 $ 
+15: Buker Kennet worked: 100 hours, salary: 4450.000000 $ 
+16: Beyts Dzhordzh worked: 100 hours, salary: 3850.000054 $ 
+17: French Ronald worked: 0 hours, salary: 2800.000042 $ 
+18: Keysi Uolter worked: 100 hours, salary: 4310.000000 $ 
+19: Nil Charlz worked: 100 hours, salary: 4290.000000 $ 
+20: Short Godvin worked: 0 hours, salary: 4094.999989 $ 
+21: Logan Dzhek worked: 0 hours, salary: 2700.000107 $ 
+END
