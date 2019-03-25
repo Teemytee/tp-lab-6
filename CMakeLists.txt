@@ -18,7 +18,14 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
+
 set(CMAKE_CXX_STANDARD 11)
+#add_library(task1_lib ${SRC_FILES1})
+#add_library(task1_lib ${SRC_FILES1} include/Student.h)
+#add_library(task1_lib ${SRC_FILES1} include/Group.h)
+#add_library(task1_lib ${SRC_FILES1} include/Deanery.h)
+#add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp )
+#>>>>>>> 7f782072dd8eab8802d7102fb6ae2d0ecc7aeeda
 
 #add_library(task1_lib ${SRC_FILES})
 add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
@@ -26,7 +33,7 @@ add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 target_link_libraries(task1)
 
 ################################
-# ing
+# Testing
 ################################
 
 # Options. Turn on with 'cmake -Dmyvarname=ON'.
@@ -52,6 +59,7 @@ if (BUILD_TESTS)
 
   # Extra linking for the project.
   target_link_libraries(runUnitTests)
+  #target_link_libraries(runUnitTests task1_lib)
 
   # This is so you can do 'make test' to see all your tests run, instead of
   # manually running the executable runUnitTests to see those specific tests.
