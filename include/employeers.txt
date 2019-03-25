@@ -1,0 +1,20 @@
+1 Morris Roland Cleaner 8 15 
+2 Simpson Donald Cleaner 8 15
+3 Parsons Dilan Driver 8 25
+4 Huver Charlz Driver 8 25
+5 Stouks Maykl ProjectManager Orion 100000 0.1 3
+6 Kuk Dzhoshua ProjectManager Nemezida 200000 0.2 3
+7 Griffin Treysi Tester 8 25 Orion 100000 0.1
+8 Dzhef Oliver Tester 8 25 Orion 100000 0.1
+9 Rayt Klement Tester 8 25 Nemezida 200000 0.1
+10 Beyts Dzhordzh Tester 8 25 Nemezida 200000 0.1
+11 French Ronald Manager Nemezida 200000 0.1
+12 Keysi Uolter TeamLeader 8 50 Orion 100000 0.2 6
+13 Nil Charlz TeamLeader 8 50 Nemezida 200000 0.3 6
+14 Uilson Osvald SeniorManager 1 0.2 1 
+15 Short Godvin SeniorManager 1 0.2 1
+16 Logan Dzhek Manager Orion 100000 0.3
+17 Dennis Devid Programmer 8 50 Orion 100000 0.1
+18 Horn Deniel Programmer 8 50 Orion 100000 0.1
+19 Bell Mark Programmer 8 50 Nemezida 200000 0.1
+20 Buker Kennet Programmer 8 50 Nemezida 200000 0.1

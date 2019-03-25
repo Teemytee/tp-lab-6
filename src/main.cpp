@@ -1,4 +1,3 @@
-#include "gtest/gtest.h"
 #include "Employee.h"
 #include "Cleaner.h"
 #include "Driver.h"
@@ -16,14 +15,19 @@
 using namespace std;
 ifstream FileEmployeers("employeers.txt");
 
-
-TEST(lab6,task1_1)
+int main()
 {
 	vector<Employee*> employee;
-	
-	int id;
-	while (FileEmployeers >> id) 
+	if (!FileEmployeers.is_open())
 	{
+		FileEmployeers.open("employeers.txt");
+		return 0;
+	}
+	else
+	{
+		int id;
+		while (FileEmployeers >> id) 
+		{
 			string name, surname;
 			FileEmployeers >> name >> surname;
 			string position;
@@ -114,12 +118,13 @@ TEST(lab6,task1_1)
 				FileEmployeers >> tributary;
 				employee.push_back(new SeniorManager(id, name + " " + surname, numprojects, contribution, tributary));
 			}
-	}
+		}
 		for (int i = 0; i < employee.size(); ++i) 
 		{
 			employee[i]->SetPayment();
 			cout << employee[i]->GetId() << "\t" << employee[i]->GetFio() << "\t" << employee[i]->GetPayment() << "\t" << employee[i]->GetWorkTime() << "\n";
 		}
+	}
+	system("pause");
+return 0;
 }
-
-
