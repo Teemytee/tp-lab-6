@@ -1,0 +1,39 @@
+name, position, base
+1 Zachary Justin Lol Cleaner 1000 40
+2 Aidan Justin Sret Cleaner 1000 40
+3 Hayden Kyle Mabuta Cleaner 1000 40
+4 James Xavier Ross Driver 1500 40
+5 Jack Dylan Harris Driver 1500 40
+6 Juan Bryan Flores Driver 1500 40
+7 Mason Sebastian Sanders Driver 1500 40
+8 Diego William Robinson Programmer 2000 TBB 40 0.001
+9 Jeremiah Hayden Powell Programmer 2200 OpenCV 50 0.001
+10 Ian Jacob Green Programmer 2000 ParallelSTL 45 0.001
+11 Jack Blake Wright Programmer 2000 OpenCV 24 0.001
+12 Jacob Thomas Hill Programmer 2100 TBB 40 0.001
+13 Jordan Thomas Rodriguez Programmer 2000 ParallelSTL 20 0.001
+14 Luke Angel Rodriguez Programmer 2300 ParallelSTL 30 0.001
+15 Lauren Sofia Phillips Programmer 2500 OpenCV 40 0.001
+16 Rachel Jessica Gray Tester 2000 ParallelSTL 42 0.001
+17 Rebecca Ariana Scott Tester 2600 OpenCV 20 0.001 
+18 Victoria Maria Morris Tester 2000 TBB 10 0.001
+19 Gabriella Sophia Wright Tester 2100 ParallelSTL 30 0.001
+20 Alexandra Kaylee Barnes Tester 2000 TBB 40 0.001
+21 Paige Madeline Ross Tester 2200 ParallelSTL 20 0.001
+22 Maria Lily Morgan Tester 2000 OpenCV 40 0.001
+23 Arianna Jada Torres Tester 2300 TBB 40 0.001
+24 Destiny Alyssa Martinez TeamLeader 4000 OpenCV 20 0.06 5
+25 Jordan Vanessa Walker TeamLeader 4200 ParallelSTL 30 0.06 6 
+26 Isabella Vanessa Edwards TeamLeader 4100 OpenCV 40 0.06 4
+27 Lillian Sara Lee ProjectManager ParallelSTL 0.05 4
+28 Victoria Michelle Clark ProjectManager ParallelSTL 0.05 5 
+29 Emma Rebecca Richardson ProjectManager ParallelSTL 0.02 6
+30 Gavin Diego Peterson ProjectManager ParallelSTL 0.03 3
+31 Xavier Cody Bennett ProjectManager ParallelSTL 0.02 2
+32 Samuel Julian Wilson ProjectManager ParallelSTL 0.04 4
+33 Sean Bryan Edwards ProjectManager ParallelSTL 0.02 3
+34 Colin Daniel Campbell ProjectManager ParallelSTL 0.05 7
+35 Mason Dominic Gonzales SeniorManager TBB 0.06 15 1000
+36 Isaiah Eric Watson SeniorManager TBB 0.07 10 1000
+37 Joshua Antonio Peterson SeniorManager TBB 0.06 7 1500
+38 Jayden Carlos Griffin SeniorManager TBB 0.08 9 2000
