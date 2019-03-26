@@ -17,7 +17,7 @@ set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
 include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
-
+# Change
 #set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
  #             ${PROJECT_SOURCE_DIR}/src/engineer.cpp
   #            ${PROJECT_SOURCE_DIR}/src/manager.cpp)
