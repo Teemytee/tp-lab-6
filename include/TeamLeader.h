@@ -18,7 +18,6 @@ public:
                unsigned _subord_num): Programmer(_id, _name, _worktime, _base, _project, _involvement)
     {
         subord_num = _subord_num;
-        setPayment();
     }
     void setPayment() override
     {

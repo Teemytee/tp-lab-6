@@ -12,9 +12,7 @@ class SeniorManager: public ProjectManager
 public:
     SeniorManager(unsigned _id, std::string _name,  PROJECT _project, double _involvement,
                   unsigned _subord_num): ProjectManager(_id, _name, _project, _involvement, _subord_num)
-    {
-        setPayment();
-    }
+    {}
 
     double calcHeadingPayment() override
     {

@@ -19,7 +19,6 @@ public:
     {
         project = _project;
         involvement = _involvement;
-        setPayment();
     }
 
     void setPayment() override

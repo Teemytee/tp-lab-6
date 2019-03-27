@@ -24,21 +24,6 @@ public:
 
     virtual void setPayment() = 0;
 
-    void setId(int id)
-    {
-        this->id=id;
-    }
-
-    void setWorktime(int worktime)
-    {
-        this->worktime = worktime;
-    }
-
-    void setName(std::string name)
-    {
-        this->name = name;
-    }
-
     std::string getName()
     {
         return this->name;
@@ -48,10 +33,7 @@ public:
     {
         return id;
     }
-    int getWorktime()
-    {
-        return worktime;
-    }
+
     double getPayment()
     {
         return payment;

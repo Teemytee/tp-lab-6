@@ -12,9 +12,7 @@ class Driver: public Personal
 public:
 
     Driver(int _id, std::string _name, int _worktime, double _base) : Personal(_id, _name, _worktime, _base)
-    {
-        setPayment();
-    }
+    {}
 
     void setPayment() override
     {

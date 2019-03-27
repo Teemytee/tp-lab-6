@@ -20,16 +20,6 @@ public:
         base = _base;
     }
 
-    void setBase(double _base)
-    {
-        base = _base;
-    }
-
-    double getBase()
-    {
-        return base;
-    }
-
 };
 
 #endif //TASK1_PERSONAL_H

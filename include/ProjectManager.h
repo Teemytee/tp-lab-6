@@ -18,7 +18,6 @@ public:
                unsigned _subord_num): Manager(_id, _name, _project, _involvement)
     {
         subord_num = _subord_num;
-        setPayment();
     }
     void setPayment() override
     {

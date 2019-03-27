@@ -26,24 +26,5 @@ public:
         involvement = _involvement;
     }
 
-    void setBase(double base)
-    {
-        this->base = base;
-    }
-
-    double getBase()
-    {
-        return base;
-    }
-
-    void setinvolvement(double involvement)
-    {
-        this->involvement= involvement;
-    }
-
-    double getinvolvement()
-    {
-        return this->involvement;
-    }
 };
 #endif //TASK1_ENGINEER_H

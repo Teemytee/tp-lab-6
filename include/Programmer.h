@@ -12,9 +12,7 @@ class Programmer: public Engineer
 public:
     Programmer(unsigned _id, std::string _name, int _worktime, double _base, PROJECT _project,
             double _involvement): Engineer(_id, _name, _worktime, _base, _project, _involvement)
-    {
-        setPayment();
-    }
+    {}
 
     void setPayment() override
     {
