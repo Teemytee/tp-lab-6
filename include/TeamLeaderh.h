@@ -15,6 +15,7 @@ public:
 		this->part = part;
 		this->inferior = inferior;
 		this->worktime = worktime;
+
 		this->budget = budget;
 		this->inferior = inferior;
 		SetPayment();
@@ -41,3 +42,4 @@ public:
 	}
 
 };
+

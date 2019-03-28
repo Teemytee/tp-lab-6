@@ -12,6 +12,8 @@ protected:
 	string project;
 	int budget;
 public:
+
 	Engineer() : Employee() {}
+
 };
 

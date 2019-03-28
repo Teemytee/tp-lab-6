@@ -11,6 +11,7 @@ public:
 		this->name = name;
 		this->position = position;
 		this->worktime = worktime;
+
 		SetPayment();
 	}
 
@@ -22,4 +23,5 @@ public:
 		this->payment = getWTsalary(worktime, base);
 	}
 };
+
 

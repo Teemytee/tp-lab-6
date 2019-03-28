@@ -11,4 +11,5 @@ protected:
 	int inferior;
 public:
 	Manager() : Employee() {}
+
 };

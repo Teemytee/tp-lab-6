@@ -14,6 +14,7 @@ public:
 		this->part = part;
 		this->project = project;
 		this->budget = budget;
+
 		SetPayment();
 	}
 
@@ -31,3 +32,4 @@ public:
 		this->payment = getPsalary(budget, part) + getWTsalary(base, worktime);
 	}
 };
+

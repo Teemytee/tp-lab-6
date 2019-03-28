@@ -6,6 +6,7 @@ using namespace std;
 
 class Cleaner: public Personal {
 public:
+
 	Cleaner(int id, string name, string position, int worktime) {
 		this->id = id;
 		this->name = name;
@@ -22,3 +23,4 @@ public:
 		this->payment = getWTsalary(worktime, base);
 	}
 };
+

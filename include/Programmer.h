@@ -6,6 +6,7 @@
 
 class Programmer : public Engineer {
 public:
+
 	Programmer(int id, string name, string position, int worktime, string project, int budget, float part) {
 
 		this->id = id;
@@ -15,6 +16,7 @@ public:
 		this->position = position;
 		this->project = project;
 		this->budget = budget;
+
 		SetPayment();
 	}
 

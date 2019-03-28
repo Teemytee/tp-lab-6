@@ -10,7 +10,6 @@ protected:
 	int worktime;
 	int payment;
 	string position;
-
 public:
 	Employee() {}
 	
@@ -23,6 +22,7 @@ public:
 
 		if (file.is_open())
 		{
+
 			if (worktime < 0) {//no worktime and base
 				file << "---------------------------------------------------------------------\n";
 
@@ -31,8 +31,11 @@ public:
 			else {
 				file << "---------------------------------------------------------------------\n";
 				file << id << " | " << name << " | " << position << " | " << worktime << " | " << payment << "\n";
+
 			}
 		}
 		file.close();
 	}
+
 };
+
