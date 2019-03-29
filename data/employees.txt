@@ -1,0 +1,35 @@
+1 Dawson Abigayle ProjectManager OpenCV 50000 0.1 4
+2 Blankenship Elizabeth Manager CUDA 70000 0.01
+3 Daniels Jemimah Driver 40 18
+4 West Edwina Programmer 40 1 CUDA 50000 0.05
+5 Baker Kerry Programmer 40 1 LogoDetection 15000 0.1
+6 Henderson Iris Programmer  40 1 CUDA 50000 0.01
+7 Hart Anne Programmer  40 1 CUDA 50000 0.01
+8 Quinn Laurel Programmer  40 1 CUDA 50000 0.06
+9 Reynolds Christal Tester  40 1 CUDA 70000 0.02
+10 Chapman Rachel ProjectManager CUDA 50000 0.1 5
+11 Paul Lisa SeniorManager CUDA 50000 0.1 10
+12 Whitehead Irma Tester  40 1 CUDA 70000 0.04
+13 Wilson Kathlyn Tester  40 1 OpenCV 50000 0.04
+14 Wood Lindsay Manager OpenCV 50000 0.1
+15 Baker Margaret Cleaner 40 5
+16 Todd Beverley Cleaner 40 5
+17 White Thomasina Tester  40 1 OpenCV 50000 0.02
+18 Kennedy Doris Driver 40 12
+19 Ramsey Morgan Tester 40 1  CUDA 70000 0.01
+20 Eaton Brenda Driver 40 10
+21 Hodge Geraldine Programmer 40 1 OpenCV 50000 0.15
+22 Daniel Alice Manager OpenCV 50000 0.1
+23 French Lorena Manager LogoDetection 15000 0.1
+24 Griffith Elisabeth Tester 40 1 CUDA 70000 0.01
+25 Pierce Joanna Programmer  40 1 OpenCV 50000 0.1
+26 Evans Christiana Tester  40 1 OpenCV 50000 0.1
+27 Ward Kenneth Tester  40 1 LogoDetection 15000 0.1
+28 Hancock Thomas TeamLeader 40 1 CUDA 70000 0.1 6
+29 Gordon Jeremy TeamLeader 40 1 OpenCV 70000 0.1 3
+30 Owen Harry Tester  40 1 LogoDetection 15000 0.1
+31 Holt Victor Manager LogoDetection 15000 0.1
+32 Hopkins Erik Programmer 40 1 LogoDetection 15000 0.1
+33 Warren Beverly Programmer 40 1 LogoDetection 15000 0.1
+34 Horton Timothy Manager CUDA 70000 0.1
+35 Goodwin Margery Tester 40 1 CUDA 50000 0.05
