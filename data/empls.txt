@@ -1,0 +1,16 @@
+1 Morris Roland Cleaner 8 15 
+2 Simpson Donald Cleaner 8 15
+3 Parsons Dilan Driver 8 25
+4 Huver Charlz Driver 8 25
+5 Stouks Maykl ProjectManager 0.1 100000 3
+6 Kuk Dzhoshua ProjectManager 0.2 200000 3
+7 Griffin Treysi Tester 8 25 0.2 100000
+8 Beyts Dzhordzh Tester 8 25 0.1 200000
+9 French Ronald Manager 0.1 200000
+10 Keysi Uolter TeamLeader 8 50 0.2 100000 6
+11 Nil Charlz TeamLeader 8 50 0.3 200000 6
+12 Uilson Osvald SeniorManager 0.2 200000 1
+13 Short Godvin SeniorManager 0.2 100000 1
+14 Logan Dzhek Manager 0.1 100000
+15 Dennis Devid Programmer 8 50 0.1 100000
+16 Buker Kennet Programmer 8 50 0.1 200000
