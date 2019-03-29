@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include "Programmer.h"
 #include "Heading.h"

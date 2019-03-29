@@ -1,3 +1,4 @@
+#pragma once
 #include "Personal.h"
 using namespace std;
 #include <string>

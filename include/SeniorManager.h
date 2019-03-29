@@ -1,3 +1,4 @@
+#pragma once
 #include"ProjectManager.h"
 #include <string>
 using namespace std;

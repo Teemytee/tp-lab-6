@@ -1,3 +1,4 @@
+#pragma once
 #include"Engineer.h"
 #include<string>
 using namespace std;

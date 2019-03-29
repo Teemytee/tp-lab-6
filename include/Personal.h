@@ -1,3 +1,4 @@
+#pragma once
 #include "Employee.h"
 using namespace std;
 class Personal : public Employee, public WorkTime {
