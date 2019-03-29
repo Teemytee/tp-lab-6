@@ -1,0 +1,10 @@
+0 name 1 Personal 10
+1 name 1 Engineer 10 0
+2 name 1 Manager 0
+3 name 1 Cleaner 10
+4 name 1 Driver 10
+5 name 1 Programmer 10 0
+6 name 1 TeamLeader 10 0 20
+7 name 1 Tester 10 0
+8 name 1 ProjectManager 0 20
+9 name 1 SeniorManager 1 20
