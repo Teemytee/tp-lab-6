@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <math.h>
 #include <vector>
@@ -21,7 +20,7 @@ int main()
 	int id, base, worktime, budget, subordinates;
 	string first_name, name, last_name, position;
 	float contribution;
-	ifstream file(""../data/empls.txt");
+	ifstream file("../data/empls.txt");
 	if (!file.is_open())
 		return 0;
 	else {
