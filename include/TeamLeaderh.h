@@ -15,9 +15,31 @@ public:
 		this->part = part;
 		this->inferior = inferior;
 		this->worktime = worktime;
-		setproject(project);
+
 		this->budget = budget;
-		payment = getPsalary(budget, part) + getHsalary(inferior)+getWTsalary(base,worktime);
+		this->inferior = inferior;
+		SetPayment();
 
 	}
+
+	int getWTsalary(int base, int worktime) {
+		int WTsalary = base * worktime;
+		return WTsalary;
+	}
+
+	float getPsalary(int budget, float part) {
+		float Psalary = part * budget;
+		return Psalary;
+	}
+
+	float getHsalary(int inferior) {
+		float Hsalary = inferior * 5000;
+		return Hsalary;
+	}
+
+	void SetPayment() {
+		this->payment = getHsalary(inferior) + getPsalary(budget, part)+ getWTsalary(base, worktime);
+	}
+
 };
+

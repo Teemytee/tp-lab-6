@@ -8,8 +8,8 @@ protected:
 	float part = 0.2;
 	string project;
 	int budget;
+	int inferior;
 public:
-	Manager() : Employee() {
+	Manager() : Employee() {}
 
-	}
 };

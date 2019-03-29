@@ -14,8 +14,22 @@ public:
 		this->part = part;
 		this->project = project;
 		this->budget = budget;
-		payment = getWTsalary(base, worktime)+getPsalary(budget,part);
-		
-		setproject(project);
+
+		SetPayment();
+	}
+
+	float getPsalary(int budget, float part) {
+		float Psalary = part * budget;
+		return Psalary;
+	}
+
+	int getWTsalary(int base, int worktime) {
+		int WTsalary = base * worktime;
+		return WTsalary;
+	}
+
+	void SetPayment() {
+		this->payment = getPsalary(budget, part) + getWTsalary(base, worktime);
 	}
 };
+

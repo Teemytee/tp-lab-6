@@ -12,8 +12,8 @@ protected:
 	string project;
 	int budget;
 public:
-	Engineer() : Employee() {
-		setbase(base);
-	}
+
+	Engineer() : Employee() {}
+
 };
 

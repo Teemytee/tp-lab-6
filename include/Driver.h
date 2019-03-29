@@ -11,7 +11,17 @@ public:
 		this->name = name;
 		this->position = position;
 		this->worktime = worktime;
-		payment = getWTsalary(base, worktime)+5000;
-		
+
+		SetPayment();
+	}
+
+	int getWTsalary(int base, int worktime) override {
+		int WTsalary = base * worktime+5000;
+		return WTsalary;
+	}
+	void SetPayment()   {
+		this->payment = getWTsalary(worktime, base);
 	}
 };
+
+

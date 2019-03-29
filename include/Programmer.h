@@ -6,8 +6,9 @@
 
 class Programmer : public Engineer {
 public:
-	Programmer(int id, string name, string position,int worktime, string project,int budget,float part) {
-		
+
+	Programmer(int id, string name, string position, int worktime, string project, int budget, float part) {
+
 		this->id = id;
 		this->name = name;
 		this->worktime = worktime;
@@ -15,7 +16,22 @@ public:
 		this->position = position;
 		this->project = project;
 		this->budget = budget;
-		payment = getWTsalary(base, worktime)+getPsalary(budget,part);
-		setproject(project);
+
+		SetPayment();
+	}
+
+	float getPsalary(int budget, float part) {
+		float Psalary = part * budget;
+		return Psalary;
+	}
+
+	int getWTsalary(int base, int worktime) {
+		int WTsalary = base * worktime;
+		return WTsalary;
+	}
+
+	void SetPayment() {
+		this->payment = getWTsalary(worktime, base)+ getPsalary(budget,part);
 	}
 };
+
