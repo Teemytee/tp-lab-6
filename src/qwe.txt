@@ -1,0 +1,8 @@
+1 Vlad Tumin Cleaner 8 15
+1 Vlad Tumin Programmer 8 20 Nomalno 3000 0.25
+1 Vlad Tumin Tester 8 20 Nomalno 3000 0.5
+1 Vlad Tumin TeamLeader 8 20 Nomalno 3000 0.25 2
+1 Vlad Tumin Manager 8 Nomalno 3000 0.2
+1 Vlad Tumin SeniorManager 8 Nomalno 3000 0.1 1 
+1 Vlad Tumin Driver 8 15
+1 Vlad Tumin ProjectManager 8 Nomalno 3000 0.1 2 
