@@ -1,5 +1,6 @@
 #pragma once
 #include "Employee.h"
+#include"WorkTime.h"
 using namespace std;
 class Personal : public Employee, public WorkTime {
 protected:
